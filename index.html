@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> APOGEE - BITS Pilani </title>
+	<link rel="stylesheet" type="text/css" href="stylesignup.css">
+	<link rel="icon" href="apogee.png" type="image/x-icon"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+<div class="bg">
+	<div class="navbar">
+	<header>
+		<nav>
+			<ul class='nav-bar'>
+				<li class='logo'><a href='#'><img src='apogee.png'/></a></li>
+				<input type='checkbox' id='check' />
+				<span class="menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">Events</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+				</span>
+				<label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+			</ul>
+		</nav>
+		</header>
+	</div>
+	<div class="loginbox">
+		<h1> APOGEE </h1>
+		<h2>Events Management System</h2>
+		<form action = "/action.php" method="post" id="myForm">
+			<p> Event's Name : </p>
+			<input type="text" id="name" name="name" placeholder="Enter the Event's Name" required>
+			<!-- drop down list -->
+			<p>Department :</p>
+			<select name="dept" id="dept" required>
+			  <option value="placeholder" id="ph">--Select your Department--</option>
+			  <option value="">Department of External Affairs</option>
+			  <option value="">Department of Firewallz</option>
+			  <option value="">Department of Informalz</option>
+			  <option value="">Department of Live Events</option>
+			  <option value="">Department of Photography</option>
+			  <option value="">Department of Lights</option>
+			  <option value="">Department of Sound</option>
+			  <option value="">Stage Controls</option>
+			  <option value="">CoStAA (Council for Students' Academic Activities)</option>
+			  <option value="">Art, Design and Publicity</option>
+			  <option value="">Department of Controls</option>
+			  <option value="">Department of Visual Media</option>
+			  <option value="">Paper Evaluation	and Presentation</option>
+			  <option value="">Publication and Correspondence APOGEE</option>
+			  <option value="">Reception and Accomodation</option>
+			  <option value="">Sponsorship and Marketing</option>
+			</select> 
+			<p> BITS ID : </p>
+			<input type="text" id="bitsid" name="id" placeholder="Enter your ID (e.g 20XXAAAAZZZZP)" required>
+			<small></small>
+			<p> Contact No. : </p>
+			<input type="text" id="c" name="c" placeholder="Enter your Contact Number" required>
+			<small></small>
+			<p>Event's Date and Time :</p>
+			<p><input type="datetime-local" name="date" id="date1" required></p>
+			<p id="to">To</p>
+			<p><input type="datetime-local" name="date" id="date2" required></p>
+			<small></small>
+			<p><input type="submit" name="register" value="Submit"></p>
+		</form>
+	</div>	
+	<p>
+
+	</p>
+</div>
+<script src="indexx.js"> </script>	
+</body>
+
+</html>
